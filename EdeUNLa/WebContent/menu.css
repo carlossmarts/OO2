@@ -1,0 +1,172 @@
+* {margin =0;padding =0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-box-sizing: border-box;
+}
+
+body {
+	background: #900028;
+	font-family: 'Roboto', sans-serif;
+	line-height: 18px;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contenedor-menu {
+	width: 20%;
+	min-width: 300px;
+	margin: 50px;
+	display: inline-block;
+	font-family: 'Roboto', sans-serif;
+	line-height: 18px;
+}
+
+.contenedor-menu.menu {
+	width: 100%;
+}
+
+.contenedor-menu ul {
+	list-style: none;
+}
+
+.contenedor-menu .menu li a {
+	color: #494949;
+	display: block;
+	padding: 15px 20px;
+	background: #e9e9e9;
+}
+
+.contenedor-menu .menu li a:hover {
+	backround: #58FA82;
+	color: #fff;
+}
+
+.contenedor-menu .menu .icono {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.contenedor-menu .menu .icono.izq {
+	float: left;
+	margin-right: 10px;
+}
+
+.contenedor-menu .menu .icono.der {
+	float: right;
+	margin-left: 10px;
+}
+
+.contenedor-menu .menu ul {
+	display: none;
+}
+
+.contenedor-menu .menu ul li a {
+	backround: #424242;
+	color: #424242;
+}
+
+.contenedor-menu .menu.activado>a {
+	backround: #1a95d5;
+	color: #58FA82;
+}
+
+form {
+	background-color: white;
+	border-radius: 3px;
+	color: #999;
+	padding: 20px;
+	margin: 0 auto;
+	width: 650px;
+}
+
+input {
+	border: 1;
+	outline: none;
+	width: 280px;
+}
+
+.field {
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+
+.field:focus {
+	border-color: #18A383;
+}
+
+.center-content {
+	text-align: center;	
+}
+.btn{
+	border-radius: 3px;
+	font-family: 'Roboto', sans-serif;
+	display: inline-block;
+	padding: 10px 10px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+	cursor: pointer;
+}
+.btn-green{
+	color: white;
+	background-color: #1883ba;
+}
+.btn-green:hover{
+	 color: #1883ba;
+    background-color: #ffffff;	
+}
+.btn-green:active{
+	background-color: #29962A;
+} 
+.main {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+}
+ 
+.slides {
+	width:100%;
+}
+ 
+.slides img {
+	width:100%;
+}
+ 
+.slidesjs-pagination {
+	background:#424242;
+	list-style:none;
+	overflow:hidden;
+}
+ 
+.slidesjs-pagination li {
+	float:left;
+}
+ 
+.slidesjs-pagination li a {
+	display:block;
+	padding:10px 20px;
+	color:#fff;
+	text-decoration:none;
+}
+ 
+.slidesjs-pagination li a:hover {
+	background:#000;
+}
+ 
+.slides .active {
+	background:#000;
+}
+ 
+.slidesjs-navigation{
+	background:#000;
+	color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:13.5px 20px;
+	float:right;
+}
+
+   

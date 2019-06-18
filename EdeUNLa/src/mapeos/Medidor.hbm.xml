@@ -1,0 +1,25 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="datos.Medidor" table="medidor">
+		<id column="idMedidor" name="idMedidor">
+			<generator class="identity" />
+		</id>
+		
+		<property column="nroSerie" name="nroSerie" type="int" />
+		
+		<many-to-one name="cliente" class="datos.Cliente" column="cliente">
+		</many-to-one>
+		
+		<property column="direccion" name="direccion" type="string" />
+		
+		<many-to-one name="zona" class="datos.Zona" column="zona">
+		</many-to-one>
+		
+		<property column="esBaja" name="esBaja" type="boolean" />
+		
+		<property column="tension" name="tension" type="string" />
+		
+	</class>
+</hibernate-mapping>

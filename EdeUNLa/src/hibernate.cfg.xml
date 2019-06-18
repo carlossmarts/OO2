@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/mydb?useTimeZone=true&amp;serverTimezone=UTC</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="connection.pool_size">1</property>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<!-- lista de mapeos -->
+		<mapping resource="mapeos/Cliente.hbm.xml" />
+		<mapping resource="mapeos/Contacto.hbm.xml" />
+		<mapping resource="mapeos/Medidor.hbm.xml" />
+		<mapping resource="mapeos/Zona.hbm.xml" />
+		<mapping resource="mapeos/Inspector.hbm.xml" />
+		<mapping resource="mapeos/Lectura.hbm.xml" />
+		<mapping resource="mapeos/Factura.hbm.xml" />
+		<mapping resource="mapeos/ItemFactura.hbm.xml" />
+		<mapping resource="mapeos/Tarifa.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

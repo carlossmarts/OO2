@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>EdeUNLa</display-name>
+	<welcome-file-list>
+		<welcome-file> index.jsp</welcome-file>
+		<welcome-file> default.html </welcome-file>
+		<welcome-file> default.htm </welcome-file>
+		<welcome-file> default.jsp </welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>ControladorMostrarClienteJSP</servlet-name>
+		<servlet-class>controladores.ControladorMostrarClienteJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControladorMostrarClienteJSP</servlet-name>
+		<url-pattern>/MostrarClienteJSP </url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ControladorAltaClienteJSP</servlet-name>
+		<servlet-class>controladores.ControladorAltaClienteJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControladorAltaClienteJSP</servlet-name>
+		<url-pattern>/AltaClienteJSP </url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ControladorBajaClienteJSP</servlet-name>
+		<servlet-class>controladores.ControladorBajaClienteJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControladorBajaClienteJSP</servlet-name>
+		<url-pattern>/BajaClienteJSP </url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ControladorModificacionClienteJSP</servlet-name>
+		<servlet-class>controladores.ControladorModificacionClienteJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControladorModificacionClienteJSP</servlet-name>
+		<url-pattern>/ModificacionClienteJSP </url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ControladorReportesJSP</servlet-name>
+		<servlet-class>controladores.ControladorReportesJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ControladorReportesJSP</servlet-name>
+		<url-pattern>/ReportesJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorFacturacionJSP</servlet-name>
+		<servlet-class>controladores.ControladorFacturacionJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorFacturacionJSP</servlet-name>
+		<url-pattern>/FacturacionJSP </url-pattern>
+	</servlet-mapping>
+
+</web-app>

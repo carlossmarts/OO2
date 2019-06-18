@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="datos.Lectura" table="lectura">
+		<id column="idLectura" name="idLectura">
+			<generator class="identity" />
+		</id>
+		
+		<many-to-one name="medidor" class="datos.Medidor" column="medidor">
+		</many-to-one>
+		
+		<property column="fecha" name="fecha" type="LocalDate" />
+		
+		<property column="hora" name="hora" type="LocalTime" />
+		
+		<many-to-one name="inspector" class="datos.Inspector" column="inspector">
+		</many-to-one>
+		
+		<joined-subclass name="datos.LecturaBajaDemanda" table="lecturaBajaDemanda">
+		<key column="idLectura" />
+		<property column="consumo" name="consumo" type="int"/>
+		
+		
+		</joined-subclass>
+		
+		<joined-subclass name="datos.LecturaAltaDemanda" table="lecturaAltaDemanda">
+		<key column="idLectura" />
+		<property column="consumoPico" name="consumoPico" type="int"/>
+		<property column="consumoValle" name="consumoValle" type="int"/>
+		<property column="consumoResto" name="consumoResto" type="int"/>
+		
+		
+		</joined-subclass>
+		
+	</class>
+</hibernate-mapping>

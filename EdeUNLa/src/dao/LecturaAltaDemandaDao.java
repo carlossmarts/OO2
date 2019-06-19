@@ -82,7 +82,7 @@ public class LecturaAltaDemandaDao {
 
 	//TRAER UN OBJETO POR CLAVE PRIMARIA(ID)
 	
-	public LecturaAltaDemanda traerLecturaAltaDemanda(long idLecturaAltaDemanda) throws HibernateException{
+	public LecturaAltaDemanda traerLecturaAltaDemanda(int idLecturaAltaDemanda) throws HibernateException{
 		LecturaAltaDemanda objeto = null;
 		try {
 			iniciaOperacion();
@@ -98,7 +98,7 @@ public class LecturaAltaDemandaDao {
 	
 	//TRAER LISTA DE LECTURAQS DE UN MEDIDOR (USA HQL)
 
-	public List<LecturaAltaDemanda> traerLecturaAltaDemanda(int nroSerie) throws HibernateException{
+	public List<LecturaAltaDemanda> traerLecturasAltaDemanda(int nroSerie) throws HibernateException{
 	List<LecturaAltaDemanda> lista=null;
 	try {
 		iniciaOperacion();

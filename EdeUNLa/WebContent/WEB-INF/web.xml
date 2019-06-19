@@ -66,5 +66,50 @@
 		<servlet-name>controladorFacturacionJSP</servlet-name>
 		<url-pattern>/FacturacionJSP </url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorConsultarLecturaJSP</servlet-name>
+		<servlet-class>controladores.ControladorConsultarLecturaJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorConsultarLecturaJSP</servlet-name>
+		<url-pattern>/ConsultarLecturaJSP </url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorAltaLecturaADJSP</servlet-name>
+		<servlet-class>controladores.ControladorAltaLecturaADJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorAltaLecturaADJSP</servlet-name>
+		<url-pattern>/AltaLecturaADJSP </url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>controladorAltaLecturaBDJSP</servlet-name>
+		<servlet-class>controladores.ControladorAltaLecturaBDJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorAltaLecturaBDJSP</servlet-name>
+		<url-pattern>/AltaLecturaBDJSP </url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorBajaLecturaJSP</servlet-name>
+		<servlet-class>controladores.ControladorBajaLecturaJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorBajaLecturaJSP</servlet-name>
+		<url-pattern>/BajaLecturaJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorModificacionLecturaJSP</servlet-name>
+		<servlet-class>controladores.ControladorModificacionLecturaJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorModificacionLecturaJSP</servlet-name>
+		<url-pattern>/ModificacionLecturaJSP</url-pattern>
+	</servlet-mapping>
 
 </web-app>

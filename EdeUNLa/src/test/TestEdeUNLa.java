@@ -136,13 +136,13 @@ public class TestEdeUNLa {
 
 		System.out.println("\n Lista de lecturas para el medidor nro: " + 12345);
 
-		for (Lectura l : LecturaBajaDemandaABM.getInstance().traerLecturaBajaDemanda(12345)) {
+		for (Lectura l : LecturaBajaDemandaABM.getInstance().traerLecturasBajaDemanda(12345)) {
 			System.out.println(l.toString());
 		}
 		
 		System.out.println("\n Lista de lecturas para el medidor nro: " + 45678);
 
-		for (Lectura l : LecturaAltaDemandaABM.getInstance().traerLecturaAltaDemanda(45678)) {
+		for (Lectura l : LecturaAltaDemandaABM.getInstance().traerLecturasAltaDemanda(45678)) {
 			System.out.println(l.toString());
 		}
 

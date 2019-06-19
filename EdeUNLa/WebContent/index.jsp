@@ -21,11 +21,22 @@
 					<li><a href="BajaCliente.jsp">Baja de Cliente</a></li>
 					<li><a href="ModificacionCliente.jsp">Modificación de Cliente</a></li>
 				</ul></li>
-			<li><a href="GestionDeClientes.jsp"><i
-					class="icono izq fas fa-address-card"></i> Gestion de Clientes</a><i class="icono der fas fa-chevron-down"></i><ul>
-					<li><a href="mostrarCliente.jsp">Consultar Cliente</a></li>
-					<li><a href="AltaCliente.jsp">Alta de Cliente</a></li>
+			
+			<li><a href="GestionDeLecturas.jsp">
+			<i class="icono izq fas fa-address-card"></i> Gestion de Lecturas</a><i class="icono der fas fa-chevron-down"></i>
+				<ul class="menu">
+					<li><a href="ConsultarLectura.jsp">Consultar Lectura</a></li>
+					<li><a href="AltaLectura.jsp">Alta Lectura</a></li>
+						<ul class="menu">
+							<li><a href="AltaLecturaAD.jsp">Lectura Alta demanda</a>
+							<li><a href="AltaLecturaBD.jsp">Lectura Baja demanda</a>
+						</ul>
+					
+					</li>		
+					<li><a href="BajaLectura.jsp">Borrar Lectura</a></li>
+					<li><a href="ModificacionLectura.jsp">Modificar Lectura</a></li>
 				</ul></li>
+			
 			<li><a href="Facturacion.jsp"> <i class="icono izq fas fa-money-check-alt"></i> Facturación </a></li>
 			<li><a href="Reportes.jsp"> <i class="icono izq fas fa-chart-bar"></i> Reportes</a></li>
 		</ul>

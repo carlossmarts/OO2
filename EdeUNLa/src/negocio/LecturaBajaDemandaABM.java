@@ -26,7 +26,7 @@ public class LecturaBajaDemandaABM {
 	
 	//Traer por clacve primaria
 
-	public LecturaBajaDemanda traerLecturaBajaDemanda(long idLecturaBajaDemanda) throws Exception{
+	public LecturaBajaDemanda traerLecturaBajaDemanda(int idLecturaBajaDemanda) throws Exception{
 		LecturaBajaDemanda c= LecturaBajaDemandaDao.getInstance().traerLecturaBajaDemanda(idLecturaBajaDemanda);
 		if (c== null){
 			throw new Exception ("Error en la capa de negocio, no existe LecturaBajaDemanda con el id indicado");
@@ -51,7 +51,7 @@ public class LecturaBajaDemandaABM {
 		LecturaBajaDemandaDao.getInstance().actualizar(c);
 	}
 	
-	public void eliminar(long pk) throws Exception {
+	public void eliminar(int pk) throws Exception {
 		LecturaBajaDemanda c = traerLecturaBajaDemanda(pk);
 		if (c== null){
 			throw new Exception ("Error en la capa de negocio, no existe LecturaBajaDemanda con el id indicado");
@@ -59,13 +59,13 @@ public class LecturaBajaDemandaABM {
 		LecturaBajaDemandaDao.getInstance().eliminar(c);
 	}
 	
-	public List<LecturaBajaDemanda>traerLecturaBajaDemanda(int nroSerie){
-		return LecturaBajaDemandaDao.getInstance().traerLecturaBajaDemanda(nroSerie);
+	public List<LecturaBajaDemanda>traerLecturasBajaDemanda(int nroSerie){
+		return LecturaBajaDemandaDao.getInstance().traerLecturasBajaDemanda(nroSerie);
 	}
 	
 	public LecturaBajaDemanda traer(int nroSerie, int anio, int mes){
 		LecturaBajaDemanda retorno = null;
-		for(LecturaBajaDemanda l : LecturaBajaDemandaDao.getInstance().traerLecturaBajaDemanda(nroSerie)){
+		for(LecturaBajaDemanda l : LecturaBajaDemandaDao.getInstance().traerLecturasBajaDemanda(nroSerie)){
 			LocalDate fecha = l.getFecha();
 			if (fecha.getMonthValue()==mes && fecha.getYear()==anio){
 				retorno = l;

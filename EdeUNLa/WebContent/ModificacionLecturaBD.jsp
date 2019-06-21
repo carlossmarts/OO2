@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@page import="negocio.LecturaBajaDemandaABM"%>
+<%@page import="datos.LecturaBajaDemanda"%>
 <html>
 <head>
 <link rel="stylesheet" href="/EdeUNLa/menu.css">
@@ -9,7 +11,9 @@
 <body>
 	<%@include file="/cabecera.jsp"%>
 
-			<!-- Formulario de Alta de Cliente  -->
+			<!-- Formulario de Modificacion de lectura baja demanda  -->
+			<%int idLectura = Integer.parseInt(request.getParameter("idLectura")); %>
+			<%LecturaBajaDemanda lbd = LecturaBajaDemandaABM.getInstance().traerLecturaBajaDemanda(idLectura); %>
 		</FORM>
 			<form name="form1" method="post" action="/EdeUNLa/ModificacionLecturaBDJSP ">
 				<table>
@@ -19,25 +23,25 @@
 					
 					<tr>
 						<td >Id de lectura a modificar</td>
-						<td ><input name="idLectura" type="text" ></td>
+						<td ><input name="idLectura" type="text" readonly="readonly" value ="<%=idLectura %>" ></td>
 					</tr>
 					
 					<tr>
 						<td >Numero de Medidor</td>
-						<td ><input name="nroMedidor" type="text" ></td>
+						<td ><input name="nroMedidor" type="text" value="<%=lbd.getMedidor().getNroSerie() %>" ></td>
 					</tr>
 
 					<tr>
 						<td>fecha(dd/mm/aaaa)</td>
-						<td ><input name="fecha" type="text" ></td>
+						<td ><input name="fecha" type="text" value="<%=lbd.getFecha() %>" ></td>
 					</tr>
 					<tr>
 						<td>Hora (hh:mm:ss)</td>
-						<td ><input name="hora" type="text"></td>
+						<td ><input name="hora" type="text" value="<%=lbd.getHora() %>"></td>
 					</tr>
 					<tr>
 						<td>Cuil del Inspector</td>
-						<td ><input name="inspector" type="text" ></td>
+						<td ><input name="inspector" type="text" value="<%=lbd.getInspector().getCuil()%>"></td>
 					</tr>
 					<tr>
 						<td>Consumo</td>

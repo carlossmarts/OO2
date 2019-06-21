@@ -25,7 +25,7 @@ public class ControladorModificacionClienteJSP extends HttpServlet {
 			throws ServletException, IOException {
 		response.setContentType("text/html;charset=UTF-8");
 		try {
-			String cuil_cuit = request.getParameter("cuil_cuit");
+			String cuil_cuit = request.getParameter("ActualCuilCuit");
 			String nuevoCuilCuit = request.getParameter("nuevoCuilCuit");
 			String direccion = request.getParameter("direccion");
 			String telefono = request.getParameter("telefono");

@@ -7,11 +7,11 @@
 "http://www.w3.org/TR/html4/loose.dtd" >
 <html>
 <head>
-<link rel="stylesheet" href="/EdeUNLa/menu.css">
+<!--  <link rel="stylesheet" href="/EdeUNLa/menu.css"> -->
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>EdeUNLa</title>
 </head>
-<BODY>
+<BODY bgcolor="#900028">
 	<%
 		Lectura l = (Lectura) request.getAttribute("lectura");
 	%>
@@ -35,6 +35,14 @@
 			<%LecturaBajaDemanda lbd = (LecturaBajaDemanda) l; %>
 			<BR> Consumo: 
 			<%=lbd.getConsumo()%>
+			<br>
+			<br>
+			<form action="/EdeUNLa/ModificacionLecturaBD.jsp" >
+				Modificar Lectura: 
+				<input type="text" name="idLectura" value="<%=lbd.getIdLectura()%>" readonly="readonly"> 
+				<br> 
+				<input type="submit" name="Submit" value="Modificar">
+			</form>
 		<%} else{%>
 			<%LecturaAltaDemanda lad = (LecturaAltaDemanda) l; %>
 			<BR> Consumo Pico: 
@@ -43,10 +51,19 @@
 			<%=lad.getConsumoValle()%>
 			<BR> Consumo Resto: 
 			<%=lad.getConsumoResto()%>
+			<br>
+			<br>
+			<form action="/EdeUNLa/ModificacionLecturaAD.jsp" >
+				Modificar Lectura: 
+				<input type="text" name="idLectura" value="<%=lad.getIdLectura()%>" readonly="readonly"> 
+				<br> 
+				<input type="submit" name="Submit" value="Modificar">
+			</form>
 		<%} %>
 	<%} %>
 		<BR>
 	<BR>
 	</div>
+	
 </BODY>
 </html>

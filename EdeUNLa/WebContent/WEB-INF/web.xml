@@ -59,12 +59,21 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>controladorFacturacionJSP</servlet-name>
-		<servlet-class>controladores.ControladorFacturacionJSP</servlet-class>
+		<servlet-name>controladorConsultarFacturaJSP</servlet-name>
+		<servlet-class>controladores.ControladorConsultarFacturaJSP</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>controladorFacturacionJSP</servlet-name>
-		<url-pattern>/FacturacionJSP </url-pattern>
+		<servlet-name>controladorConsultarFacturaJSP</servlet-name>
+		<url-pattern>/ConsultarFacturaJSP </url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorGenerarFacturaJSP</servlet-name>
+		<servlet-class>controladores.ControladorGenerarFacturaJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorGenerarFacturaJSP</servlet-name>
+		<url-pattern>/GenerarFacturaJSP </url-pattern>
 	</servlet-mapping>
 	
 	<servlet>

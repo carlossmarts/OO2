@@ -34,6 +34,7 @@ public class ClienteABM {
 		if (c == null) {
 			throw new Exception("Error en la capa de negocio, no se encontró un cliente con el cuil indicado");
 		}
+		
 		return c;
 	}
 	
@@ -60,6 +61,13 @@ public class ClienteABM {
 		}
 		ClienteDao.getInstance().eliminar(c);
 	}
+	
+	public void BajaLogica (int idCliente) throws Exception{
+		Cliente c = ClienteDao.getInstance().traerCliente(idCliente);
+		c.setInactivo(true);
+		ClienteDao.getInstance().actualizar(c);
+	}
+	
 	
 	public List<Cliente>traerClientes(){
 		return ClienteDao.getInstance().traerClientes();

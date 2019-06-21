@@ -27,17 +27,24 @@ public class ControladorBajaClienteJSP extends HttpServlet {
 		try {
 			String cuil_cuit = request.getParameter("cuil_cuit");
 			Cliente cliente = ClienteABM.getInstance().traerCliente(cuil_cuit);
+
+			/* BAJA FISICA 
 			Cliente aux = new Cliente();
+
 			aux.setCuil_cuit(cliente.getCuil_cuit());
+			 
 			int idCliente = cliente.getIdCliente();
 			
 			ContactoABM.getInstance().eliminar(idCliente);
 			
 			ClienteABM.getInstance().eliminar(idCliente);
-		
+			*/
+			ClienteABM.getInstance().BajaLogica(cliente.getIdCliente());
 			
-			request.setAttribute("cliente", aux);
-			request.getRequestDispatcher("/vistaBajaCliente.jsp").forward(request, response);
+			cliente = ClienteABM.getInstance().traerCliente(cuil_cuit);
+			
+			request.setAttribute("cliente", cliente);
+			request.getRequestDispatcher("/vistaCliente.jsp").forward(request, response);
 		} catch (Exception e) {
 			response.sendError(500, e.getMessage());
 		}

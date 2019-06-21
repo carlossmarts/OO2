@@ -8,6 +8,7 @@ public class Cliente {
 	private String cuil_cuit;
 	private Contacto contacto;
 	private Set<Medidor> medidores; 
+	private boolean inactivo;
 	
 	
 	public Cliente() {
@@ -17,6 +18,15 @@ public class Cliente {
 	public Cliente(String cuil_cuit) {
 		super();
 		this.cuil_cuit=cuil_cuit;
+		this.inactivo= false;		//Solo se setea en true mediante una baja lógica
+	}
+
+	public boolean isInactivo() {
+		return inactivo;
+	}
+
+	public void setInactivo(boolean inactivo) {
+		this.inactivo = inactivo;
 	}
 
 	public int getIdCliente() {
@@ -56,6 +66,7 @@ public class Cliente {
 		String retorno = "Cliente: " + idCliente;
 		retorno += "\n Cuil/Cuit: " + cuil_cuit;
 		retorno += contacto.toString();
+		retorno += "Cliente activo: " + !inactivo;
 		return retorno;
 	}
 	

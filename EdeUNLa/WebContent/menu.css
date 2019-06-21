@@ -18,7 +18,7 @@ a {
 .contenedor-menu {
 	width: 20%;
 	min-width: 300px;
-	margin: 50px;
+	leftmargin: 0 auto;
 	display: inline-block;
 	font-family: 'Roboto', sans-serif;
 	line-height: 18px;

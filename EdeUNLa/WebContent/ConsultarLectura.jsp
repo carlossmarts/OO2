@@ -7,7 +7,6 @@
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
 <body>
-	<%@include file="/cabecera.jsp"%>
 		<FORM method="POST" action=" /EdeUNLa/ConsultarLecturaJSP ">
 			<table>
 					<caption >
@@ -35,7 +34,5 @@
 				</table>
 
 <BR>
-<a href="javascript:history.back()"><i class="fas fa-arrow-alt-circle-left"></i></a>
-<a href="index.jsp">Volver</a>
 </body>
 </html>

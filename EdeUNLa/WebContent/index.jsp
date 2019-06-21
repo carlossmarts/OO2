@@ -10,35 +10,60 @@
 <link rel="stylesheet" href="/EdeUNLa/menu.css">
 <TITLE>EdeUNLa</TITLE>
 </HEAD>
-<BODY >
-	<%@include file="cabecera.jsp"%>
+<BODY>
 	<div class="contenedor-menu">
 		<ul class="menu">
 			<li><a href="GestionDeClientes.jsp"><i
-					class="icono izq fas fa-address-card"></i> Gestion de Clientes</a><i class="icono der fas fa-chevron-down"></i><ul>
-					<li><a href="mostrarCliente.jsp">Consultar Cliente</a></li>
-					<li><a href="AltaCliente.jsp">Alta de Cliente</a></li>
-					<li><a href="BajaCliente.jsp">Baja de Cliente</a></li>
-					<li><a href="ModificacionCliente.jsp">Modificación de Cliente</a></li>
-				</ul></li>
+					class="icono izq fas fa-address-card"></i> Gestion de Clientes <i
+				class="icono der fas fa-chevron-down"></i></a>
+				<!--  <ul>
+					<li><a href="mostrarCliente.jsp" target="centro">Consultar
+							Cliente</a></li>
+					<li><a href="AltaCliente.jsp" target="centro">Alta de
+							Cliente</a></li>
+					<li><a href="BajaCliente.jsp" target="centro">Baja de
+							Cliente</a></li>
+					<li><a href="ModificacionCliente.jsp" target="centro">Modificación
+							de Cliente</a></li>
+				</ul>--> </li>
+
+			<li><a href="GestionDeLecturas.jsp" target="centro"><i
+					class="icono izq fas fa-address-card"></i> Gestion de Lecturas
+			<i class="icono der fas fa-chevron-down"></i></a>
+				<ul>
+					<li><a href="ConsultarLectura.jsp" target="centro">Consultar
+							Lectura</a></li>
+					<li><a href="AltaLectura.jsp" target="centro">Alta Lectura <i class="icono der fas fa-chevron-down"></i></a>
+						<ul>
+							<li><a href="AltaLecturaAD.jsp" target="centro">Lectura
+									Alta demanda</a></li>
+							<li><a href="AltaLecturaBD.jsp" target="centro">Lectura
+									Baja demanda</a></li>
+						</ul></li>
+				
+			<li><a href="BajaLectura.jsp" target="centro">Borrar Lectura</a></li>
+			<li><a href="ModificacionLectura.jsp" target="centro">ModificarLectura</a>
+					<ul>
+							<li><a href="ModificacionLecturaAD.jsp" target="centro">Lectura
+									Alta demanda</a></li>
+							<li><a href="ModificacionLecturaBD.jsp" target="centro">Lectura
+									Baja demanda</a></li>
+					</ul>
 			
-			<li><a href="GestionDeLecturas.jsp">
-			<i class="icono izq fas fa-address-card"></i> Gestion de Lecturas</a><i class="icono der fas fa-chevron-down"></i>
-				<ul class="menu">
-					<li><a href="ConsultarLectura.jsp">Consultar Lectura</a></li>
-					<li><a href="AltaLectura.jsp">Alta Lectura</a></li>
-						<ul class="menu">
-							<li><a href="AltaLecturaAD.jsp">Lectura Alta demanda</a>
-							<li><a href="AltaLecturaBD.jsp">Lectura Baja demanda</a>
-						</ul>
+			
+			</li>
 					
-					</li>		
-					<li><a href="BajaLectura.jsp">Borrar Lectura</a></li>
-					<li><a href="ModificacionLectura.jsp">Modificar Lectura</a></li>
-				</ul></li>
-			
-			<li><a href="Facturacion.jsp"> <i class="icono izq fas fa-money-check-alt"></i> Facturación </a></li>
-			<li><a href="Reportes.jsp"> <i class="icono izq fas fa-chart-bar"></i> Reportes</a></li>
+					
+					
+					
+					</ul></li>
+
+			<li><a href="Facturacion.jsp" target="centro"> <i
+					class="icono izq fas fa-money-check-alt"></i> Facturación
+			</a></li>
+			<li><a href="Reportes.jsp" target="centro"> <i
+					class="icono izq fas fa-chart-bar"></i> Reportes
+			</a></li>
 		</ul>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

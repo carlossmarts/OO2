@@ -10,11 +10,16 @@
 <title>EdeUNLa</title>
 </head>
 <BODY>
-	<%@include file="/cabecera.jsp"%>
 	<%
 		Cliente cliente = (Cliente) request.getAttribute("cliente");
 	%>
 	<div style= "background-color:lightblue">
+	
+	<%if(cliente.isInactivo()){ %>
+		<br> El cliente con cuil/cuit: <%=cliente.getCuil_cuit() %> se encuentra inactivo 
+	
+	<%}else{ %>
+	<BR> Datos del Cliente </BR>
 	<BR> Cuil_cuit:
 	<%=cliente.getCuil_cuit()%>
 	<BR> Direccion :
@@ -24,8 +29,8 @@
 	<BR> email :
 	<%=cliente.getContacto().getEmail()%>
 	<BR>
+	<%} %>
 	<BR>
 	</div>
-	<A href="/EdeUNLa/index.jsp"> Volver... </A>
 </BODY>
 </html>

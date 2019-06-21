@@ -12,10 +12,12 @@
 <title>EdeUNLa</title>
 </head>
 <BODY>
+	<%@include file="/cabecera.jsp"%>
 	<%
 		Lectura l = (Lectura) request.getAttribute("lectura");
 	%>
 	<div style= "background-color:lightblue">
+	<BR> Lectura Modificada <BR>
 	<BR> Lectura 
 	<%=l.getIdLectura()%>
 	<BR> Medidor numero:
@@ -44,5 +46,6 @@
 	<BR>
 	<BR>
 	</div>
+	<A href="/EdeUNLa/index.jsp"> Volver... </A>
 </BODY>
 </html>

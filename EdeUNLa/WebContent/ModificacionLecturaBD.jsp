@@ -11,11 +11,17 @@
 
 			<!-- Formulario de Alta de Cliente  -->
 		</FORM>
-			<form name="form1" method="post" action="/EdeUNLa/AltaLecturaBDJSP ">
+			<form name="form1" method="post" action="/EdeUNLa/ModificacionLecturaBDJSP ">
 				<table>
 					<caption >
-						<center><h3><b>Alta de Lectura de medidor residencial</b></h3></center>
+						<center><h3><b>Modificacion de Lectura de medidor residencial</b></h3></center>
 					</caption>
+					
+					<tr>
+						<td >Id de lectura a modificar</td>
+						<td ><input name="idLectura" type="text" ></td>
+					</tr>
+					
 					<tr>
 						<td >Numero de Medidor</td>
 						<td ><input name="nroMedidor" type="text" ></td>
@@ -37,10 +43,9 @@
 						<td>Consumo</td>
 						<td ><input name="consumo" type="text" ></td>
 					</tr>
-					
 					<tr>
 						<td><input type="submit" name="submit"class="btn btn-green"
-							value="Alta de Cliente"></td>
+							value="Modificar Lectura"></td>
 						<td ><input type="reset"
 							name="submit" class="btn btn-green"value="Vaciar los datos"></td>
 					</tr>
@@ -48,5 +53,7 @@
 			</form>
 
 <BR>
+<a href="javascript:history.back()"><i class="fas fa-arrow-alt-circle-left"></i></a>
+<a href="index.jsp">Volver</a>
 </body>
 </html>

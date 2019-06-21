@@ -22,6 +22,5 @@
 				<td><%=cliente.getCuil_cuit()%></td>
 			</tr>
 		</table>
-		</form> <A href="/EdeUNLa/index.jsp"> Volver... </A>
 </BODY>
 </html>

@@ -7,6 +7,7 @@
 			<generator class="identity" />
 		</id>
 		<property column="cuil_cuit" name="cuil_cuit" type="string" />
+		<property column="inactivo" name="inactivo" type="boolean" />
 		<one-to-one name="contacto" class="datos.Contacto">
 		</one-to-one>
 	</class>

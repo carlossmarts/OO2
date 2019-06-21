@@ -15,7 +15,6 @@
 <title>EdeUNLa</title>
 </head>
 <BODY>
-	<%@include file="/cabecera.jsp"%>
 	<%
 			Factura factura = (Factura) request.getAttribute("factura");
 		%>
@@ -66,6 +65,5 @@
 			<BR>
 		</table>
 	</form>
-	<A href="/EdeUNLa/index.jsp"> Volver... </A>
 </BODY>
 </html>

@@ -37,6 +37,7 @@ public class ControladorFacturacionJSP extends HttpServlet {
 
 
 			Factura factura = FacturaABM.getInstance().traerFacturaCompleta(nroMedidor, mes, anio);
+			
 
 			request.setAttribute("factura", factura);
 			request.getRequestDispatcher("/vistaFactura.jsp").forward(request, response);

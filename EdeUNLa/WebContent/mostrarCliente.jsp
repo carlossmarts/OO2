@@ -7,7 +7,6 @@
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
 <body>
-	<%@include file="/cabecera.jsp"%>
 		<FORM method="POST" action=" /EdeUNLa/MostrarClienteJSP ">
 			<TABLE border="0">
 			<caption >
@@ -21,8 +20,7 @@
 					<TD><INPUT type="submit" class="btn btn-green"value="Consultar"></TD>
 				</TR>
 			</TABLE>	
+			</FORM>
 <BR>
-<a href="javascript:history.back()"><i class="fas fa-arrow-alt-circle-left"></i></a>
-<a href="index.jsp">Volver</a>
 </body>
 </html>

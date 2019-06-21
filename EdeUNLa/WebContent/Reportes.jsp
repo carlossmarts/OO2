@@ -6,9 +6,7 @@
 <title>Reportes</title>
 </head>
 <body>
-	<%@include file="/cabecera.jsp"%>
-	<font FACE="Cabin">
-		<H3>Emitir reporte de facturas emitidas entre fechas</H3>
+		<H3>7) Facturas emitidas entre fechas</H3>
 		<form name="Reporte" method="post" action="/EdeUNLa/ReportesJSP ">
 			<table>
 				<tr>
@@ -26,8 +24,6 @@
 			</table>
 			<div id="divlistarFacturas"></div>
 		</form> <BR>
-	</font>
 	<BR>
-	<a href="index.jsp">Volver al Menu Principal</a>
 </body>
 </html>

@@ -30,7 +30,7 @@ public class TestABMClienteYContacto {
 			System.out.println("Cliente" + cli.getCuil_cuit() + " Agregado");
 			cli.setCuil_cuit("20-41716615-9");
 			abm.modificarCliente(cli);
-			System.out.println("CLiente" + cli.getCuil_cuit() + " Modificado");
+			System.out.println("CLiente Modificado \n" + cli.toString());
 			/*
 			 * abm.eliminar(id); System.out.println("CLiente Eliminado");
 			 */
@@ -40,6 +40,10 @@ public class TestABMClienteYContacto {
 
 			System.out.println("Excepcion: " + e.getMessage());
 		}
+		
+		ClienteABM.getInstance().BajaLogica(ClienteABM.getInstance().traerCliente("20-41716615-9").getIdCliente());
+		
+		System.out.println(ClienteABM.getInstance().traerCliente("20-41716615-9"));
 		
 	}
 }

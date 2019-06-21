@@ -55,7 +55,5 @@
 			</form>
 
 <BR>
-<a href="javascript:history.back()"><i class="fas fa-arrow-alt-circle-left"></i></a>
-<a href="index.jsp">Volver</a>
 </body>
 </html>

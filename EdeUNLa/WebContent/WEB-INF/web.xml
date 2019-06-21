@@ -104,12 +104,21 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>controladorModificacionLecturaJSP</servlet-name>
-		<servlet-class>controladores.ControladorModificacionLecturaJSP</servlet-class>
+		<servlet-name>controladorModificacionLecturaADJSP</servlet-name>
+		<servlet-class>controladores.ControladorModificacionLecturaADJSP</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>controladorModificacionLecturaJSP</servlet-name>
-		<url-pattern>/ModificacionLecturaJSP</url-pattern>
+		<servlet-name>controladorModificacionLecturaADJSP</servlet-name>
+		<url-pattern>/ModificacionLecturaADJSP</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>controladorModificacionLecturaBDJSP</servlet-name>
+		<servlet-class>controladores.ControladorModificacionLecturaBDJSP</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>controladorModificacionLecturaBDJSP</servlet-name>
+		<url-pattern>/ModificacionLecturaBDJSP</url-pattern>
 	</servlet-mapping>
 
 </web-app>

@@ -24,10 +24,16 @@ public class ControladorMostrarClienteJSP extends HttpServlet {
 		response.setContentType("text/html;charset=UTF-8");
 		try {
 			String cuil_cuit = request.getParameter("cuil_cuit");
+			
+			System.out.println(cuil_cuit);
+			
 			ClienteABM clienteabm = ClienteABM.getInstance();
 			Cliente cliente = clienteabm.traerCliente(cuil_cuit);
 			request.setAttribute("cliente", cliente);
 			request.getRequestDispatcher("/vistaCliente.jsp").forward(request, response);
+			
+			
+			
 		} catch (Exception e) {
 			response.sendError(500, e.getMessage());
 		}

@@ -31,6 +31,5 @@
 			<BR>
 		</table>
 	</form>
-	<A href="/EdeUNLa/index.jsp"> Volver... </A>
 </BODY>
 </html>

@@ -35,6 +35,7 @@ DROP TABLE IF EXISTS `mydb`.`Cliente` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`Cliente` (
   `idCliente` INT NOT NULL AUTO_INCREMENT,
   `cuil_cuit` varchar (80) NULL,
+  `inactivo` tinyint(1) null,
   PRIMARY KEY (`idCliente`))
 ENGINE = InnoDB;
 

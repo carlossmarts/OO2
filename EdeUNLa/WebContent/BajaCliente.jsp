@@ -6,7 +6,6 @@
 <title>Baja de Cliente</title>
 </head>
 <body>
-	<%@include file="/cabecera.jsp"%>
 	<FORM method="POST" action=" /EdeUNLa/BajaClienteJSP ">
 			Ingresar cuil/cuit del Cliente a eliminar <BR> <BR>
 			<TABLE border="0">
@@ -20,6 +19,5 @@
 				</TR>
 			</TABLE>	
 <BR>
-<a href="index.jsp">Volver </a>
 </body>
 </html>

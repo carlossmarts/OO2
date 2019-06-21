@@ -14,8 +14,6 @@
 <title>Facturacion</title>
 </head>
 <body>
-
-	<%@ include file="/cabecera.jsp"%>
 	<%List<Factura> facturas =(List)request.getAttribute("facturas");%>
 	<%for (Factura factura : facturas) {
 		%>
@@ -71,6 +69,5 @@
 		%>
 	<BR>
 	</div>
-	<A href="/EdeUNLa/index.jsp"> Volver... </A>
 </body>
 </html>

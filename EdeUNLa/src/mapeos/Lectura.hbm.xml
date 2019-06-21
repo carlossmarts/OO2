@@ -14,6 +14,8 @@
 		
 		<property column="hora" name="hora" type="LocalTime" />
 		
+		<property column="inactiva" name="inactiva" type="boolean" />
+		
 		<many-to-one name="inspector" class="datos.Inspector" column="inspector">
 		</many-to-one>
 		

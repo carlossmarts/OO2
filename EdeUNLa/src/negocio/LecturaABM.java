@@ -45,6 +45,14 @@ public class LecturaABM {
 		LecturaDao.getInstance().eliminar(c);
 	}
 	
+	public void bajaLogica (int idLectura) {
+		Lectura l = LecturaDao.getInstance().traerLectura(idLectura);
+		l.setInactiva(true);
+		l.setFecha(null);
+		l.setMedidor(null);
+		LecturaDao.getInstance().actualizar(l);
+	}
+	
 	public List<Lectura>traerLecturas(){
 		return LecturaDao.getInstance().traerLecturas();
 	}

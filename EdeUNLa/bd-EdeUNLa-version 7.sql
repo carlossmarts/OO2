@@ -91,6 +91,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Lectura` (
   `medidor` INT NOT NULL,
   `fecha` DATE NULL,
   `hora` TIME NULL,
+  `inactiva` tinyint(1) null,
   `inspector` INT NOT NULL,
   PRIMARY KEY (`idLectura`),
   INDEX `fk_Lectura_Inspector1_idx` (`inspector` ASC),

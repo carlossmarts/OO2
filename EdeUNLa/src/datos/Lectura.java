@@ -7,11 +7,12 @@ import funciones.Funciones;
 
 public class Lectura {
 
-	private long idLectura;
+	private int idLectura;
 	private Medidor medidor;
 	private LocalDate fecha;
 	private LocalTime hora;
-	private Inspector inspector; 
+	private Inspector inspector;
+	private boolean inactiva;
 	
 	public Lectura() {
 		super();
@@ -23,17 +24,26 @@ public class Lectura {
 		this.fecha = fecha;
 		this.hora = hora;
 		this.inspector = inspector;
+		this.inactiva = false;			//solo se pone en true en caso de baja logica
 	}
 	
+	public boolean isInactiva() {
+		return inactiva;
+	}
+
+	public void setInactiva(boolean inactiva) {
+		this.inactiva = inactiva;
+	}
+
 	public String toString(){
 		return "Lectura " + idLectura + ", medidor nro: " + medidor.getNroSerie() + ", fecha: " + Funciones.traerFechaCorta(fecha);
 	}
 
-	public long getIdLectura() {
+	public int getIdLectura() {
 		return idLectura;
 	}
 
-	protected void setIdLectura(long idLectura) {
+	protected void setIdLectura(int idLectura) {
 		this.idLectura = idLectura;
 	}
 

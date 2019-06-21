@@ -159,6 +159,7 @@ public class TestEdeUNLa {
 
 			System.out.println("\n");
 
+			/*
 			Factura factura2 = FacturaABM.getInstance().generarFactura(12345, 8, 2019);
 			idUltimaFactura = FacturaABM.getInstance().agregar(factura2.getNroMedidor(), factura2.getDireccion(),
 					factura2.getFecha(), factura2.getTotalPagar(), factura2.getObservaciones(),
@@ -166,7 +167,7 @@ public class TestEdeUNLa {
 			ItemFacturaABM.getInstance().agregar(factura2.getLstItem(),
 					FacturaABM.getInstance().traerFactura(idUltimaFactura));
 			System.out.println(FacturaABM.getInstance().traerFacturaCompleta(12345, 8, 2019).toString());
-
+			*/
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -183,6 +184,7 @@ public class TestEdeUNLa {
 
 			System.out.println("\n");
 
+			/*
 			Factura factura2 = FacturaABM.getInstance().generarFactura(45678, 8, 2019);
 			idUltimaFactura = FacturaABM.getInstance().agregar(factura2.getNroMedidor(), factura2.getDireccion(),
 					factura2.getFecha(), factura2.getTotalPagar(), factura2.getObservaciones(),
@@ -190,7 +192,7 @@ public class TestEdeUNLa {
 			ItemFacturaABM.getInstance().agregar(factura2.getLstItem(),
 					FacturaABM.getInstance().traerFactura(idUltimaFactura));
 			System.out.println(FacturaABM.getInstance().traerFacturaCompleta(45678, 8, 2019).toString());
-
+			*/
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}

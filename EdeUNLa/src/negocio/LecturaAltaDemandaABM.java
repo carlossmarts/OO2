@@ -49,10 +49,6 @@ public class LecturaAltaDemandaABM {
 	}
 	
 	public void modificarLecturaAltaDemanda (LecturaAltaDemanda c) throws Exception{
-		Lectura l = traer(c.getMedidor().getNroSerie(),c.getFecha().getYear(), c.getFecha().getMonthValue());
-		if (l != null){
-			throw new Exception("Error en la capa de negocio, ya existe una lecturaAltaDemanda para ese medidor, mes y año");
-		}
 		LecturaAltaDemandaDao.getInstance().actualizar(c);
 	}
 	

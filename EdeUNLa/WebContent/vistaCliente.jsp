@@ -5,7 +5,7 @@
 "http://www.w3.org/TR/html4/loose.dtd" >
 <html>
 <head>
-<!-- <link rel="stylesheet" href="/EdeUNLa/menu.css">  -->
+<link rel="stylesheet" href="/EdeUNLa/menu.css">  
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>EdeUNLa</title>
 </head>
@@ -29,17 +29,18 @@
 	<BR> email :
 	<%=cliente.getContacto().getEmail()%>
 	<BR>
-	<%} %>
-	<BR>
-	</div>
-	
-	<div style= "background-color:lightblue">
-		<form action="/EdeUNLa/ModificacionCliente.jsp">
+	<form action="/EdeUNLa/ModificacionCliente.jsp">
 			Modificar Cliente: 
 			<input type="text" name="idCliente" value="<%=cliente.getIdCliente()%>" readonly="readonly">
 			<br>
 			<input type="submit" name="Submit" value="Modificar">
 		</form>
+	<%} %>
+	<BR>
+	</div>
+	
+	<div style= "background-color:lightblue">
+		
 	<BR>
 	</div>
 </BODY>

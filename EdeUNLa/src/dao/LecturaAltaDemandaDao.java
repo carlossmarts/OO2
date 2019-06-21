@@ -86,7 +86,9 @@ public class LecturaAltaDemandaDao {
 		LecturaAltaDemanda objeto = null;
 		try {
 			iniciaOperacion();
-			objeto=(LecturaAltaDemanda)session.get(LecturaAltaDemanda.class, idLecturaAltaDemanda);
+			String hql = "from Lectura l inner join fetch l.medidor m inner join fetch l.inspector i where l.idLectura = " + idLecturaAltaDemanda;
+			objeto = (LecturaAltaDemanda) session.createQuery(hql).uniqueResult(); 
+			//objeto=(LecturaAltaDemanda)session.get(LecturaAltaDemanda.class, idLecturaAltaDemanda);
 		}
 		finally {
 			session.close();

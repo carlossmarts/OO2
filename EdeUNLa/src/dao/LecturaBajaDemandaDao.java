@@ -86,7 +86,9 @@ public class LecturaBajaDemandaDao {
 		LecturaBajaDemanda objeto = null;
 		try {
 			iniciaOperacion();
-			objeto=(LecturaBajaDemanda)session.get(LecturaBajaDemanda.class, idLecturaBajaDemanda);
+			String hql = "from Lectura l inner join fetch l.medidor m inner join fetch l.inspector i where l.idLectura = " + idLecturaBajaDemanda;
+			//objeto=(LecturaBajaDemanda)session.get(LecturaBajaDemanda.class, idLecturaBajaDemanda);
+			objeto = (LecturaBajaDemanda) session.createQuery(hql).uniqueResult();		
 		}
 		finally {
 			session.close();
@@ -103,7 +105,7 @@ public class LecturaBajaDemandaDao {
 		List<LecturaBajaDemanda> lista=null;
 		try {
 			iniciaOperacion();
-			String hql = "from LecturaBajaDemanda l inner join fetch l.medidor m where m.nroSerie = " + nroSerie;
+			String hql = "from LecturaBajaDemanda l inner join fetch l.medidor m inner join fetch l.inspector i where m.nroSerie = " + nroSerie;
 			lista=session.createQuery(hql).list();
 		}
 		finally {

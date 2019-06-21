@@ -27,20 +27,11 @@
 							de Cliente</a></li>
 				</ul>--> </li>
 
-			<li><a href="GestionDeLecturas.jsp" target="centro"><i
-					class="icono izq fas fa-address-card"></i> Gestion de Lecturas
-			<i class="icono der fas fa-chevron-down"></i></a>
-				<ul>
-					<li><a href="ConsultarLectura.jsp" target="centro">Consultar
-							Lectura</a></li>
-					<li><a href="AltaLectura.jsp" target="centro">Alta Lectura <i class="icono der fas fa-chevron-down"></i></a>
-						<ul>
-							<li><a href="AltaLecturaAD.jsp" target="centro">Lectura
-									Alta demanda</a></li>
-							<li><a href="AltaLecturaBD.jsp" target="centro">Lectura
-									Baja demanda</a></li>
-						</ul></li>
-				
+			
+			<li><a href="ConsultarLectura.jsp" >Consultar Lectura</a></li>
+			<li><a href="AltaLectura.jsp" >Alta Lectura </a>
+			<li><a href="AltaLecturaAD.jsp" >Lectura Alta demanda</a></li>
+			<li><a href="AltaLecturaBD.jsp" target="centro">Lectura Baja demanda</a></li>
 			<li><a href="BajaLectura.jsp" target="centro">Borrar Lectura</a></li>
 			<li><a href="ModificacionLectura.jsp" target="centro">ModificarLectura</a>
 					<ul>
@@ -54,8 +45,11 @@
 			</li>
 					</ul></li>
 
-			<li><a href="Facturacion.jsp" target="centro"> <i
-					class="icono izq fas fa-money-check-alt"></i> Facturación
+			<li><a href="ConsultarFactura.jsp" target="centro"> <i
+					class="icono izq fas fa-money-check-alt"></i> Consultar Factura
+			</a></li>
+			<li><a href="GenerarFactura.jsp" target="centro"> <i
+					class="icono izq fas fa-money-check-alt"></i> Generar Factura
 			</a></li>
 			<li><a href="Reportes.jsp" target="centro"> <i
 					class="icono izq fas fa-chart-bar"></i> Reportes

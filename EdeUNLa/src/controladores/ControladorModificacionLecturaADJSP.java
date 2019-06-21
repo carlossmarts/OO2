@@ -37,11 +37,9 @@ DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 			int idLectura = Integer.parseInt(request.getParameter("idLectura"));
 			
 			int nroMedidor = Integer.parseInt(request.getParameter("nroMedidor"));
-			int anio = Integer.parseInt(request.getParameter("anio"));
-			int mes = Integer.parseInt(request.getParameter("mes"));
 			LocalDate fecha = LocalDate.parse(request.getParameter("fecha"));
 			LocalTime hora = LocalTime.parse(request.getParameter("hora"));
-			int inspectorCuil = Integer.parseInt(request.getParameter("inspector"));
+			String inspectorCuil = request.getParameter("inspector");
 			int pico = Integer.parseInt(request.getParameter("pico"));
 			int valle = Integer.parseInt(request.getParameter("valle"));
 			int resto = Integer.parseInt(request.getParameter("resto"));

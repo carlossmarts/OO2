@@ -6,7 +6,7 @@
 <title>Mostrar Cliente</title>
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
-<body>
+<body topmargin="22,6">
 		<FORM method="POST" action=" /EdeUNLa/MostrarClienteJSP ">
 			<TABLE border="0">
 			<caption >

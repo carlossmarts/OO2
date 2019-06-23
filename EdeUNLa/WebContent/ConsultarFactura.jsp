@@ -23,11 +23,27 @@
 
 			<tr>
 				<td>Ingresar año</td>
-				<td><input name="anio" type="text"></td>
+				<td><select name="anio">
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+				</select></td>
 			</tr>
 			<tr>
 				<td>Ingresar mes</td>
-				<td><input name="mes" type="text"></td>
+				<td><select name="mes">
+						<option value="1">Enero</option>
+						<option value="2">Febrero</option>
+						<option value="3">Marzo</option>
+						<option value="4">Abril</option>
+						<option value="5">Mayo</option>
+						<option value="6">Junio</option>
+						<option value="7">Julio</option>
+						<option value="8">Agosto</option>
+						<option value="9">Septiembre</option>
+						<option value="10">Octubre</option>
+						<option value="11">Noviembre</option>
+						<option value="12">Diciembre</option>
+				</select></td>
 			</tr>
 			<tr>
 				<td><input type="submit" name="submit" class="btn btn-green"

@@ -5,7 +5,7 @@
 <meta charset="ISO-8859-1">
 <title>Baja de Cliente</title>
 </head>
-<body>
+<body topmargin="22,5">
 	<FORM method="POST" action=" /EdeUNLa/BajaClienteJSP ">
 			Ingresar cuil/cuit del Cliente a eliminar <BR> <BR>
 			<TABLE border="0">

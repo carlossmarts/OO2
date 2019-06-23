@@ -6,10 +6,9 @@
 <title>Alta Cliente</title>
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
-<body>
+<body topmargin="22,5">
 
 	<!-- Formulario de Alta de Cliente  -->
-	</FORM>
 	<form name="form1" method="post" action="/EdeUNLa/AltaClienteJSP ">
 		<table>
 			<caption>

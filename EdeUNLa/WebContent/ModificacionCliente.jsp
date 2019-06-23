@@ -52,7 +52,7 @@
 				<td><input type="submit" name="Submit" class="btn btn-green"
 					value="Modificar Cliente"></td>
 				<td colspan="2" align="right"><input type="reset"
-					name="Submit2" class="btn btn-green" value="Vaciar los datos"></td>
+					name="Submit2" class="btn btn-green" value="Restablecer los datos"></td>
 			</tr>
 		</table>
 	</form>

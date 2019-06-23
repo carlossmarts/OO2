@@ -10,7 +10,6 @@
 <title>EdeUNLa </title >
 </head>
 <BODY>
-	<%@include file="/cabecera.jsp"%>
 	<%
 		Cliente cliente = (Cliente) request.getAttribute("cliente");
 	%>

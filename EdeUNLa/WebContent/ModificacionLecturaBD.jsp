@@ -23,12 +23,12 @@
 					
 					<tr>
 						<td >Id de lectura a modificar</td>
-						<td ><input name="idLectura" type="text" readonly="readonly" value ="<%=lbd.getIdLectura() %>" ></td>
+						<td ><input name="idLectura" type="text" readonly="readonly" value ="<%=idLectura %>" ></td>
 					</tr>
 					
 					<tr>
 						<td >Numero de Medidor</td>
-						<td ><input name="nroMedidor" type="text" value="<%=lbd.getMedidor().getNroSerie()%>" ></td>
+						<td ><input name="nroMedidor" type="text" value="<%=lbd.getMedidor().getNroSerie() %>" ></td>
 					</tr>
 
 					<tr>

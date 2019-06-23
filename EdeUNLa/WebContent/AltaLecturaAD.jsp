@@ -7,10 +7,8 @@
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
 <body>
-	<%@include file="/cabecera.jsp"%>
 
 			<!-- Formulario de Alta de Cliente  -->
-		</FORM>
 			<form name="form1" method="post" action="/EdeUNLa/AltaLecturaADJSP ">
 				<table>
 					<caption >
@@ -23,11 +21,11 @@
 
 					<tr>
 						<td>fecha(dd/mm/aaaa)</td>
-						<td ><input name="fecha" type="text" ></td>
+						<td ><input name="fecha" type="Date" ></td>
 					</tr>
 					<tr>
 						<td>Hora (hh:mm:ss)</td>
-						<td ><input name="hora" type="text"></td>
+						<td ><input name="hora" type="time"></td>
 					</tr>
 					<tr>
 						<td>Cuil del Inspector</td>
@@ -47,7 +45,7 @@
 					</tr>
 					<tr>
 						<td><input type="submit" name="submit"class="btn btn-green"
-							value="Alta de Cliente"></td>
+							value="Alta de Lectura"></td>
 						<td ><input type="reset"
 							name="submit" class="btn btn-green"value="Vaciar los datos"></td>
 					</tr>

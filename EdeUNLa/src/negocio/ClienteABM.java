@@ -34,6 +34,9 @@ public class ClienteABM {
 		if (c == null) {
 			throw new Exception("Error en la capa de negocio, no se encontró un cliente con el cuil indicado");
 		}
+		if(c.isInactivo()) {
+			throw new Exception("Error en la capa de negocio, el cliente con el cuil indicado se encuentra Inactivo");
+		}
 		
 		return c;
 	}

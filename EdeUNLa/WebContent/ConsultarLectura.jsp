@@ -6,7 +6,7 @@
 <title>ConsultarLectura</title>
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
-<body>
+<body topmargin="22,5">
 	<FORM method="POST" action=" /EdeUNLa/ConsultarLecturaJSP ">
 		<table>
 			<caption>

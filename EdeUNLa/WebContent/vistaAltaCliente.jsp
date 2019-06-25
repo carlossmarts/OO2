@@ -9,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>EdeUNLa</title>
 </head>
-<BODY>
+<BODY topmargin="22,5">
 	<%
 		Cliente cliente = (Cliente) request.getAttribute("cliente");
 	%>

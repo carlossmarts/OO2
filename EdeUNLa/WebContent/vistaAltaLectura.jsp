@@ -12,7 +12,6 @@
 <title>EdeUNLa</title>
 </head>
 <BODY>
-	<%@include file="/cabecera.jsp"%>
 	<%
 		Lectura l = (Lectura) request.getAttribute("lectura");
 	%>

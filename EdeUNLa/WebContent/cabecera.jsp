@@ -11,7 +11,7 @@
 	<div class="wrapper">
 		<div class="logo">
 			<a title="Menu Inicio" href="centro.jsp" target="centro"><IMG
-				src="img/unla.png" height="100" width="100" ></a>
+				src="img/unla.png" height="100" width="100" ></a> 
 		</div>
 		<nav> <a href="centro.jsp"  target="centro">Inicio</a> <a href="#">Servicios</a> <a
 			href="#">Proyectos</a> <a href="#">Contacto</a> </nav>

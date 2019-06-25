@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="/EdeUNLa/menu.css">
 <title>Facturacion</title>
 </head>
-<body>
+<body topmargin="22,5">
 	<%List<Factura> facturas =(List)request.getAttribute("facturas");%>
 	<%for (Factura factura : facturas) {
 		%>

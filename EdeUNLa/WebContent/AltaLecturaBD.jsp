@@ -6,7 +6,7 @@
 <title>Alta Lectura AD</title>
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 </head>
-<body>
+<body topmargin="22,5">
 
 			<!-- Formulario de Alta de Cliente  -->
 			<form name="form1" method="post" action="/EdeUNLa/AltaLecturaBDJSP ">

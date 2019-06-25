@@ -7,7 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Modificacion de Cliente</title>
 </head>
-<body>
+<body topmargin="22,5">
 	<form name="form1" method="post"
 		action="/EdeUNLa/ModificacionClienteJSP">
 		

@@ -5,8 +5,7 @@
 <meta charset="ISO-8859-1">
 <title>Facturacion</title>
 </head>
-<body>
-	</FORM>
+<body topmargin="22,5">
 	<form name="form1" method="post" action="/EdeUNLa/ConsultarFacturaJSP ">
 		<table>
 			<caption>
@@ -53,7 +52,6 @@
 			</tr>
 		</table>
 	</form>
-
 	<BR>
 </body>
 </html>

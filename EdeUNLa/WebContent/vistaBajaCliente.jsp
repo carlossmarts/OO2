@@ -9,8 +9,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>EdeUNLa</title>
 </head>
-<BODY>
-	<font FACE="Cabin"> <%@include file="/cabecera.jsp"%>
+<BODY topmargin="22,5">
+	<font FACE="Cabin">
 		<%
 			Cliente cliente = (Cliente) request.getAttribute("cliente");
 		%>

@@ -7,7 +7,7 @@
 <script src="https://kit.fontawesome.com/a6faa08691.js"></script>
 <link rel="stylesheet" href="/EdeUNLa/menu.css">
 </head>
-<body>
+<body topmargin="22,5">
 	<div class="contenedor-menu">
 		<ul class="menu">
 					<li><a href="index.jsp"><i class="icono izq fas fa-home"></i>Menu Principal</a></li>

@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/EdeUNLa/menu.css">
 <title>Reportes</title>
 </head>
-<body>
+<body topmargin="22,5">
 		<H3>7) Facturas emitidas entre fechas</H3>
 		<form name="Reporte" method="post" action="/EdeUNLa/ReportesJSP ">
 			<table>
